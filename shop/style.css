@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 5px 2px #aaa;
+    background: rgba(255, 255, 255, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sh {
+    filter: drop-shadow(0 0 2px #000);
+}
+
+.trate {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+}
+
+.ha {
+    height: 100%;
+    width: auto;
+}
+
+.ha1 {
+    line-height: 50px;
+    padding: 10px;
+}
+
+.titem {
+    height: 100%;
+    width: auto;
+}
+
+.item {
+    height: 100%;
+    position: relative;
+}
+
+.itmg,
+.naa {
+    image-rendering: pixelated;
+}
+
+.itxt {
+    line-height: 5px;
+    bottom: 11px;
+    right: 8px;
+    position: absolute;
+    text-shadow: 0 0 5px #000;
+    color: #fff;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    overflow-y: hidden;
+}
+
+#title {
+    line-height: 70px;
+    font-size: xx-large;
+}
