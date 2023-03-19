@@ -1,4 +1,4 @@
-const stocks {
+const stocks = {
     "rapis": 3
 };
 
