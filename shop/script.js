@@ -1,5 +1,5 @@
-const stocks = {
-    "rapis": 387
+const stocks {
+    "rapis": 3
 };
 
 stockstuck(stocks["rapis"], "rapis.webp").forEach(i => {
