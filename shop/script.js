@@ -1,9 +1,9 @@
 const stocks = {
-    "rapis": 3
+    "hazmat": 2,
 };
 
-stockstuck(stocks["rapis"], "rapis.webp").forEach(i => {
-    document.getElementById("rapistock").appendChild(i)
+stockstuck(stocks["hazmat"], "hazmat.png", 1).forEach(i => {
+    document.getElementById("hazmatstock").appendChild(i)
 });
 
 [...document.getElementsByClassName("titem")].forEach(pitem => {
@@ -25,6 +25,7 @@ function stockstuck(s, n, sc = 64) {
     let res = []
     let nmuch = s % sc
     let much = (s - nmuch) / sc
+    if (sc == 1) sc == ""
     console.log(nmuch, much)
     for (let _ of ((start, end) => [...Array(end + 1).keys()].slice(start))(1, much)) {
         let item = document.createElement("div")
@@ -37,6 +38,6 @@ function stockstuck(s, n, sc = 64) {
     item.classList.add("titem")
     item.setAttribute("name", n)
     item.setAttribute("amount", nmuch)
-    res.push(item)
+    if (nmuch > 0) res.push(item)
     return res
 }
